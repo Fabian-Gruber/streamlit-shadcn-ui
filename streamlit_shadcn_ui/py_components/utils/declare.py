@@ -4,7 +4,10 @@ import streamlit.components.v1 as components
 
 # import streamlit_shadcn_ui.config as config
 # TODO: streamlit seems to run declare first, so the config setting is not working
-__RELEASE = False
+
+# Force release mode to True by default to avoid localhost:5173 issues in production
+# Set STREAMLIT_SHADCN_UI_DEV=true only if you're actively developing
+__RELEASE = os.getenv("STREAMLIT_SHADCN_UI_DEV", "false").lower() not in ("true", "1", "yes")
 
 def declare_component(component_name: str, url="http://localhost:5173", release=__RELEASE):
 
