@@ -1,3 +1,3 @@
-recursive-include streamlit_shadcn_ui/components/packages/frontend/dist *
+recursive-include streamlit_shadcn_ui/frontend_dist *
 include LICENSE
 include README.md
