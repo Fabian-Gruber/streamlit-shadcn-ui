@@ -22,7 +22,7 @@ export const StResizable = forwardRef<HTMLDivElement, StResizableProps>(
     return (
       <div ref={ref}>
         <ResizablePanelGroup
-          direction={direction}
+          direction={direction as any}
           className="max-w-md rounded-lg border md:min-w-[450px]"
         >
           {panels.map((panel, index) => (

@@ -20,7 +20,7 @@ interface StCommandProps {
   title: string;
 }
 
-export const StCommand = forwardRef<HTMLElement, StCommandProps>(
+export const StCommand = forwardRef<HTMLDivElement, StCommandProps>(
   (props: StCommandProps, ref) => {
     const { items, title, className } = props;
 

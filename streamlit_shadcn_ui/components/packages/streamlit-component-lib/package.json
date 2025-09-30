@@ -47,8 +47,7 @@
     "ts-node": "^10.9.1",
     "typescript": "^5.0.4"
   },
-  "resolutions": {
-    "@types/hoist-non-react-statics/**/@types/react": "16.14.41",
-    "@testing-library/react/**/@types/react": "16.14.41"
+  "overrides": {
+    "@types/react": "16.14.41"
   }
 }
